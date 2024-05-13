@@ -12,13 +12,15 @@ const Header = () => {
   return (
     <header className='flex items-center py-4 justify-between'>
 
-      <h1 className='font-bold text-lg flex gap-3'><ReactSvg size="30" /> ReactJourney</h1>
-      <div>
-
-        <Button>
+      <h1 className='font-bold text-lg flex gap-3'>
+        <ReactSvg size="30" />
+        <span>React Journey</span>
+      </h1>
+      <div className='flex gap-2'>
+        <Button variant="ghost">
           <ShoppingBasket size="20" />
         </Button>
-        <Button>
+        <Button variant="ghost">
           <User size="20" />
         </Button>
       </div>
